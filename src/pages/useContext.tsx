@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Client from 'Client'
 import { Variables } from 'Types'
 import { urlFor } from 'Client'
-const useContext = ({usecontext}:any) => {
+const UseContext = ({usecontext}:any) => {
     const [react,setReact]=useState(usecontext)
   return (
     
@@ -39,7 +39,7 @@ const useContext = ({usecontext}:any) => {
   )
 }
 
-export default useContext
+export default UseContext
 
 export async function getServerSideProps(context: any) {
     const query = `*[_type == "About" && name=="useContext"]`;

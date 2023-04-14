@@ -4,7 +4,7 @@ import Client from 'Client'
 import { Variables } from 'Types'
 import { urlFor } from 'Client'
 
-const reactrouter = ({router}:any) => {
+const Reactrouter = ({router}:any) => {
     const [react,setReact]=useState(router)
   return (
     <>
@@ -46,7 +46,7 @@ const reactrouter = ({router}:any) => {
   )
 }
 
-export default reactrouter
+export default Reactrouter
 
 export async function getServerSideProps(context: any) {
     const query = `*[_type == "About" && name=="React-router"]`;

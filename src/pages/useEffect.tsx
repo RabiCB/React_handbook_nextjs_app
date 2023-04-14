@@ -4,7 +4,7 @@ import Client from 'Client'
 import { Variables } from 'Types'
 import { urlFor } from 'Client'
 
-const useEffect = ({useeffect}:any) => {
+const UseEffect = ({useeffect}:any) => {
   const [react,setReact]=useState(useeffect)
   return (
     <>
@@ -37,7 +37,7 @@ const useEffect = ({useeffect}:any) => {
   )
 }
 
-export default useEffect
+export default UseEffect
 
 
 export async function getServerSideProps(context: any) {
