@@ -32,7 +32,7 @@ const UseContext = ({usecontext}:any) => {
             <div className="text-justify text-sm flex flex-col gap-4 ">
               <p>{value?.guide}</p>
             </div>
-            <img alt="code example" className="w-full  h-[360px] object-contain rounded-lg" src={urlFor(value?.additional_image.asset._ref).url()}/>
+            <img alt="code example" className="w-full  h-[320px] object-contain rounded-lg" src={urlFor(value?.additional_image.asset._ref).url()}/>
           </div>
         ))}
       </div>
