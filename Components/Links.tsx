@@ -2,10 +2,10 @@ import React from 'react'
 
 
 
-const Links = ({menu,setMenu}:any) => {
+const Links = ({menu,setMenu,ref}:any) => {
   
   return (
-    <div className="h-16 w-screen fixed top-0 right-0 left-0 border-b-[1px] border-slate-300/30  bg-gray-200 flex justify-between items-center px-8  shadow-sm z-40 ">
+    <div  className="h-16 w-screen fixed top-0 right-0 left-0 border-b-[1px] border-slate-300/30  bg-gray-200 flex justify-between items-center px-8  shadow-sm z-40 ">
         <div className="flex flex-row gap-3 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ const Links = ({menu,setMenu}:any) => {
             </li>
           </a>
         </ul>
-        <div onClick={() => setMenu(!menu)} className="hidden max-md:block">
+        <div ref={ref} onClick={()=>setMenu(!menu)} className="hidden max-md:block">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
