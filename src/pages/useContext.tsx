@@ -25,13 +25,14 @@ const UseContext = ({usecontext}:any) => {
 
             <img
               className="w-full  h-[360px] object-contain rounded-lg"
+              alt="code "
               src={urlFor(value?.image.asset._ref).url()}
             />
            
             <div className="text-justify text-sm flex flex-col gap-4 ">
               <p>{value?.guide}</p>
             </div>
-            <img className="w-full  h-[360px] object-contain rounded-lg" src={urlFor(value?.additional_image.asset._ref).url()}/>
+            <img alt="code example" className="w-full  h-[360px] object-contain rounded-lg" src={urlFor(value?.additional_image.asset._ref).url()}/>
           </div>
         ))}
       </div>

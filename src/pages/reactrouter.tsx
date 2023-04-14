@@ -27,6 +27,7 @@ const Reactrouter = ({router}:any) => {
             <p className="text-justify text-sm ">{value?.ending}</p>
             <img
               className="w-full  h-[360px] object-contain rounded-lg"
+              alt="code "
               src={urlFor(value?.image.asset._ref).url()}
             />
             <div className="text-justify text-sm flex flex-col gap-4 ">

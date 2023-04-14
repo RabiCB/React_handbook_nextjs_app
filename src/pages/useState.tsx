@@ -25,6 +25,7 @@ const UseState = ({ usestate }: any) => {
             <img
               className="w-full  h-[360px] object-contain rounded-lg"
               src={urlFor(value?.image.asset._ref).url()}
+              alt="code "
             />
             <p className="text-justify text-sm ">{value?.ending}</p>
             <div className="text-justify text-sm flex flex-col gap-4 ">

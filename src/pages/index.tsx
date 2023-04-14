@@ -30,6 +30,7 @@ export default function Home({ data }: any) {
               <img
                 className="w-full h-[200px] object-cover rounded-lg"
                 src={urlFor(value?.image.asset._ref).url()}
+                alt="reactlogo"
               />
               <div className="text-justify text-sm flex flex-col gap-4 ">
                 <h2 className="text-xl font-bold">
