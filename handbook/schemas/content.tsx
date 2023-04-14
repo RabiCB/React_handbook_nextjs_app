@@ -14,13 +14,19 @@ export default {
       name: 'content',
       type: 'string',
       title: 'about content',
-      validation: (Rule: any) => Rule.max(300),
+      validation: (Rule: any) => Rule.required(),
     },
     {
       name: 'ending',
       type: 'string',
       title: 'ending of the content',
       validation: (Rule: any) => Rule.required(),
+    },
+    {
+      name: 'guide',
+      type: 'string',
+      title: 'guide for installation',
+      
     },
     {
       name: 'image',
@@ -31,13 +37,13 @@ export default {
       name: 'npm',
       type: 'string',
       title: ' installation query for npm',
-      validation: (Rule: any) => Rule.required(),
+      
     },
     {
       name: 'yarn',
       type: 'string',
       title: ' installation query for yarn',
-      validation: (Rule: any) => Rule.required(),
+      
     },
     {
         name:"additional_image",
