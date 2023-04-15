@@ -30,7 +30,7 @@ const Links = ({menu,setMenu,ref}:any) => {
 
         <ul className="max-md:space-x-3 flex space-x-6 items-center">
           <h1 className="max-md:text-sm max-sm:text-xs text-slate-400">Powered-by </h1>
-          <a href="https://react.dev.com" className="cursor-pointer">
+          <a href="https://react.dev/" className="cursor-pointer">
             <li>
               <img
                 src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"

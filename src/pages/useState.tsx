@@ -23,7 +23,7 @@ const UseState = ({ usestate }: any) => {
             <p className="text-justify text-sm ">{value?.content}</p>
 
             <img
-              className="w-full  h-[360px] object-contain rounded-lg"
+              className="w-full  h-[360px] object-cover rounded-lg"
               src={urlFor(value?.image.asset._ref).url()}
               alt="code "
             />
