@@ -25,16 +25,16 @@ const Links = ({menu,setMenu,ref}:any) => {
             />
           </svg>
 
-          <h2 className="font-semibold text-xl">F-DOCS</h2>
+          <h2 className="font-semibold text-xl ">Handbook</h2>
         </div>
 
-        <ul className="flex space-x-6 items-center max-md:hidden">
-          <h1 className="text-slate-400">Powered By </h1>
+        <ul className="max-md:space-x-4 flex space-x-6 items-center">
+          <h1 className="max-md:text-sm max-sm:text-xs text-slate-400">Powered By </h1>
           <a href="https://react.dev.com" className="cursor-pointer">
             <li>
               <img
                 src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
-                className="w-12 h-10 object-contain rounded-lg hover:animate-spin"
+                className="max-sm:w-6 max-sm:h-6 max-md:w-8 max-md:h-8 w-10 h-10 object-contain rounded-md hover:animate-spin"
                 alt="react logo"
               />
             </li>
@@ -43,7 +43,7 @@ const Links = ({menu,setMenu,ref}:any) => {
             <li>
               <img
                 src="https://www.sanity.io/static/images/logo_rounded_square.png"
-                className="w-12 h-10 object-contain rounded-lg hover:animate-spin"
+                className="max-sm:w-6 max-sm:h-6 max-md:w-8 max-md:h-8 w-10 h-10 object-contain rounded-md hover:animate-spin"
                 alt="react logo"
               />
             </li>
@@ -51,14 +51,13 @@ const Links = ({menu,setMenu,ref}:any) => {
           <a href="https://nextjs.org/">
             <li>
               <img
-                src="https://teacode.io/wp-content/uploads/2022/06/Copy-of-AWS-Amplify-blog-compress.png"
-                className="w-12 h-10 object-cover rounded-lg hover:animate-spin"
+                src="https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png"
+                className="max-sm:w-6 max-sm:h-6 max-md:w-8 max-md:h-8 w-10 h-10 object-contain rounded-md hover:animate-spin"
                 alt="react logo"
               />
             </li>
           </a>
-        </ul>
-        <div ref={ref} onClick={()=>setMenu(!menu)} className="hidden max-md:block">
+          <div ref={ref} onClick={()=>setMenu(!menu)} className="hidden max-md:block">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -72,6 +71,8 @@ const Links = ({menu,setMenu,ref}:any) => {
             />
           </svg>
         </div>
+        </ul>
+        
       </div>
   )
 }

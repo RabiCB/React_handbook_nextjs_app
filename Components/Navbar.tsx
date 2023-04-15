@@ -30,7 +30,7 @@ const Navbar = () => {
         className={
           menu
             ? " h-screen flex transition-all ease-in-out duration-100 items-start z-20 pl-8 flex-col justify-start   w-56 bg-gray-100 border-x-[1px] border-slate-300/30  fixed pb-10    bottom-0 text-black left-0 top-0  space-y-4 pt-20"
-            : "  h-screen flex transition-all ease-in-out duration-100 items-start z-20 pl-8 flex-col justify-start  w-56 bg-gray-100 border-x-[1px] border-slate-300/30   fixed pb-10 left-0 top-0   bottom-0 text-black max-md:hidden  space-y-4 pt-20   "
+            : " h-screen flex transition-all ease-in-out duration-100 items-start z-20 pl-8 flex-col justify-start  w-56 bg-gray-100 border-x-[1px] border-slate-300/30   fixed pb-10 left-0 top-0   bottom-0 text-black max-md:hidden  space-y-4 pt-20   "
         }
       >
         
@@ -106,7 +106,30 @@ const Navbar = () => {
         >
           useContext
         </Link>
+        <Link
+          onClick={() => setMenu(false)}
+          className={
+            router.pathname == "/useRef"
+              ? "text-[#0EA5E9] font-semibold"
+              : "text-gray-600 font-semibold"
+          }
+          href="/useRef"
+        >
+          useRef
+        </Link>
+        <Link
+          onClick={() => setMenu(false)}
+          className={
+            router.pathname == "/useCallback"
+              ? "text-[#0EA5E9] font-semibold"
+              : "text-gray-600 font-semibold"
+          }
+          href="/useCallback"
+        >
+          useCallback
+        </Link>
       </div>
+      
     </>
   );
 };
