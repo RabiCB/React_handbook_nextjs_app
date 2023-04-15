@@ -39,7 +39,7 @@ export default function Home({ data }: any) {
               <p className="text-justify text-sm ">{value?.content}</p>
               <p className="text-justify text-sm ">{value?.ending}</p>
               <img
-                className="w-full h-[200px] object-cover rounded-lg"
+                className="w-full h-[200px] object-contain rounded-lg"
                 src={urlFor(value.image.asset._ref).url()}
                 alt="reactlogo"
               />

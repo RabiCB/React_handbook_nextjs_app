@@ -21,12 +21,13 @@ const UseEffect = ({useeffect}:any) => {
               {value.name}
             </h4>
             <p className="text-justify text-sm ">{value?.content}</p>
-
+            <div className='flex items-center justify-center'>
             <img
-              className="w-full  h-[360px] object-cover rounded-lg"
+              className="w-full h-[360px] object-contain rounded-lg"
               src={urlFor(value?.image.asset._ref).url()}
               alt="code "
             />
+            </div>
             <p className="text-justify text-sm ">{value?.ending}</p>
             <div className="text-justify text-sm flex flex-col gap-4 ">
               <p>{value?.guide}</p>
