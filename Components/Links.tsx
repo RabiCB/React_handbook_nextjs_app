@@ -5,13 +5,13 @@ import React from 'react'
 const Links = ({menu,setMenu,ref}:any) => {
   
   return (
-    <div  className="h-16 w-screen fixed top-0 right-0 left-0 border-b-[1px] border-slate-300/30  bg-gray-200 flex justify-between items-center px-8  shadow-sm z-40 ">
-        <div className="flex flex-row gap-3 items-center">
+    <div  className="max-sm:px-4 h-16 w-screen fixed top-0 right-0 left-0 border-b-[1px] border-slate-300/30  bg-gray-200 flex justify-between items-center px-8  shadow-sm z-40 ">
+        <div className="max-sm:gap-1 flex flex-row gap-3 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-8 h-8 text-[#0EA5E9]"
+            className="max-sm:w-6 max-h-6 w-8 h-8 text-[#0EA5E9]"
           >
             <path
               fillRule="evenodd"
@@ -25,11 +25,11 @@ const Links = ({menu,setMenu,ref}:any) => {
             />
           </svg>
 
-          <h2 className="font-semibold text-xl ">Handbook</h2>
+          <h2 className="max-md:text-lg max-sm:text-sm font-semibold text-xl ">Handbook</h2>
         </div>
 
-        <ul className="max-md:space-x-4 flex space-x-6 items-center">
-          <h1 className="max-md:text-sm max-sm:text-xs text-slate-400">Powered By </h1>
+        <ul className="max-md:space-x-3 flex space-x-6 items-center">
+          <h1 className="max-md:text-sm max-sm:text-xs text-slate-400">Powered-by </h1>
           <a href="https://react.dev.com" className="cursor-pointer">
             <li>
               <img
@@ -62,7 +62,7 @@ const Links = ({menu,setMenu,ref}:any) => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-8 h-8"
+            className="max-sm:w-6 max-sm:h-6 w-8 h-8 "
           >
             <path
               fill-rule="evenodd"
